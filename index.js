@@ -6,7 +6,7 @@ input.addEventListener("keydown", function(event){
     if(event.key === "Enter")
     addItem();
 })
-
+// for adding items..
 function addItem(){
     var divParent = document.createElement("div");
     var divChild = document.createElement("div");
@@ -15,13 +15,13 @@ function addItem(){
 
     divParent.className = "item";
     divParent.innerHTML = '<div>'+input.value+'</div>';
-
+// for completing the task
 checkIcon.className = "fa-solid fa-check";
 checkIcon.style.color ="lightgray";
 checkIcon.addEventListener("click",function(){
     checkIcon.style.color = "green";
 })
-
+    // for deleting the task 
 divChild.appendChild(checkIcon);
 trashIcon.className = "fa-solid fa-trash";
 trashIcon.style.color="darkgray";
